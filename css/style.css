@@ -737,7 +737,7 @@ input :focus {
   height: 460px;
   padding: 75px;
   border-radius: 40px;
-  background: url(img/Cta/1.svg);
+  background: url(/img/Cta/1.svg);
   color: var(--color-accent);
 }
 @media (max-width: 767px) {
