@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Эвакуаторы в Москве и МО</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
                             </div>
                             <button class="hero__button button">Заказать эвакуатор</button>
                         </div>
-                        <img src="img/Header/1.png" alt="" class="hero__img" width="860" height="560" loading="lazy">
+                        <img src="/img/Header/1.png" alt="" class="hero__img" width="860" height="560" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -182,11 +182,11 @@
     
                         </div>
                         <div class="cta__form">
-                            <form action="" class="cta__form-list">
-                                <input type="text" id="name" name="name" placeholder="Ваше имя" required="">
-                                <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required="">
+                            <form action="" class="cta__form-list" id="form">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="name" required="">
+                                <input type="tel" id="phone" name="phone" placeholder="Телефон" minlength="18" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" autocomplete="tel" required="">
                                 <!-- <input type="submit" value="Отправить заявку" class="button" onclick="alert('Заявка отправлена! В скором времени с вами свяжется менеджер!')"> -->
-                                <button type="submit" class="button" onclick="alert('Заявка отправлена! В скором времени с вами свяжется менеджер!')">Отправить заявку</button>
+                                <button type="submit" class="button" id="buttonAlert">Отправить заявку</button>
                             </form>
                         </div>
                     </span>
@@ -223,6 +223,10 @@
             </ul>
         </div>
     </dialog>
+
+
+    <script src="/js/script.js"></script>
 </body>
+
 
 </html>
